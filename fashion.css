@@ -1,0 +1,254 @@
+:root {
+  --max-w: 1180px;
+  --gutter: 32px;
+}
+
+
+.fashion-heading {
+  max-width: var(--max-w);
+  margin: 40px auto 15px;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Old Standard TT', serif;
+  font-size: 55px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 1px;
+  position: relative;
+  animation: fadeIn 1s ease;
+}
+
+.section-line {
+  width: 100%;
+  margin: 0 auto 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+
+.fashion-grid {
+  max-width: var(--max-w);
+  margin: 0 auto 70px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--gutter);
+}
+
+.fashion-card.large {
+  grid-column: 2 / 3;
+  grid-row: 1 / span 2;
+  margin-top: 40px;
+}
+
+.fashion-card.small:nth-of-type(2) { grid-column: 1; grid-row: 1; }
+.fashion-card.small:nth-of-type(3) { grid-column: 3; grid-row: 1; }
+.fashion-card.small:nth-of-type(4) { grid-column: 1; grid-row: 2; }
+.fashion-card.small:nth-of-type(5) { grid-column: 3; grid-row: 2; }
+
+
+.fashion-card {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  will-change: transform; 
+}
+
+.fashion-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+.fashion-card.large img { max-height: 400px; }
+.fashion-card.small img { max-height: 260px; }
+
+.card-text {
+  text-align: center;
+  max-width: 260px;
+  margin: 12px auto 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-text h3 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.card-text p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.card-text .author {
+  font-size: 11px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+
+.must-read {
+  background: #f5f5f5;
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 40px 12px 60px;
+}
+
+.must-read h2 {
+  max-width: var(--max-w);
+  margin: 0 auto 18px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.must-read h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #111;
+  margin: 8px auto 0;
+}
+
+.must-grid {
+  max-width: var(--max-w);
+  margin: 18px auto 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.must-grid article {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  display: flex;
+  flex-direction: column;
+}
+
+.must-grid img {
+  width: 100%;
+  height: auto;      
+  object-fit: contain;
+}
+
+.must-grid h4 {
+  margin: 14px 16px 6px;
+  font-size: 12px;
+  color: #666;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.must-grid p {
+  margin: 0 16px 8px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.must-grid span {
+  margin: 0 16px 14px;
+  color: #777;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+.fashion-card,
+.must-grid article {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
+}
+.fashion-card.is-visible,
+.must-grid article.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fashion-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+.fashion-card:hover img {
+  transform: scale(1.05);
+  transition: transform .3s ease;
+}
+.must-grid article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.15);
+}
+
+
+@media (max-width: 768px) {
+
+  .fashion-heading {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  .section-line {
+    margin-bottom: 30px;
+  }
+
+  .fashion-grid {
+    grid-template-columns: 1fr; 
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  .fashion-card.large,
+  .fashion-card.small {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 0;
+  }
+  
+  .fashion-card.large img {
+    max-height: none; 
+  }
+
+  .must-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    background: #fff;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 9999;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+  }
+
+  .main-nav.open {
+    right: 0; 
+  }
+
+  .main-nav ul {
+    display: flex; 
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+
+  .main-nav li {
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+    text-align: left;
+  }
+
+  .main-nav a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: block;
+  }
+}

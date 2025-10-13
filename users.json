@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Alina Amangeldiyeva",
+      "email": "alina.amangeldiyeva@vogue.com"
+    },
+    {
+      "id": 2,
+      "name": "Dana Marat",
+      "email": "dana.marat@vogue.com"
+    },
+    {
+      "id": 3,
+      "name": "Guest User",
+      "email": "guest@example.com"
+    },
+
+    {
+        "id": 4,
+        "name": "Saltanat Askarovna",
+        "email": "saltanat.askarovna@vogue.com"
+    }
+  ]

@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "category": "MUSTREAD",
+    "title": "All the Winners at the 2025 Emmy Awards",
+    "author": "BY VOGUE",
+    "date": "September 14, 2025",
+    "image": "Images/Emmy.png",
+    "content": "The 77th Primetime Emmy Awards took place on Sunday night, with shows like Adolescence, Severance, The Bear, The White Lotus, and The Penguin vying for the top prizes at Los Angeles’s Peacock Theater. The Creative Arts Emmys, held on September 6 and 7, had already handed out several exciting awards, including for Bryan Cranston’s guest turn on The Studio and Julianne Nicholson’s chaotic arc on Hacks. But the main ceremony promised thrilling head-to-heads between, to name just a few, Adam Brody and Jeremy Allen White; Pedro Pascal and Noah Wyle; Ayo Edebiri and Jean Smart; and Bella Ramsey and Britt Lower… Exciting stuff, to be sure."
+  },
+  {
+    "id": 2,
+    "category": "TRENDS",
+    "title": "11 Fall 2025 Trends Vogue Editors Are Shopping",
+    "author": "BY CORTNE BONILLA",
+    "date": "September 10, 2025",
+    "image": "Images/trends1.png",
+    "content": "The thrill of summer comes in like a lion, and fizzles out softly like a lamb. The heat, and all the glorious activities that come with it, inspire us to dress in vivid sunset-adjacent colors, explore unique locations, and spend languid afternoons drenched in silk, cotton-poplin, and coastal prep garb. But, for the fashion set, there is always that itch we can’t wait to scratch. It comes in the form of fall/winter 2025’s biggest trends."
+  },
+  {
+    "id": 3,
+    "category":"COLLECTIONS",
+    "brand": "THE ROW",
+    "name": "Margan oversized cotton shirt",
+    "image": "Images/fall1.png"
+  },
+  {
+    "id": 4,
+    "category":"COLLECTIONS",
+    "brand": "THE ROW",
+    "name": "Clair pants",
+    "image": "Images/fall2.png"
+  },
+  {
+    "id": 5,
+    "category":"COLLECTIONS",
+    "brand": "THE ROW",
+    "name": "Izzy bag",
+    "image": "Images/fall3.png"
+  },
+  {
+    "id": 6,
+    "category":"COLLECTIONS",
+    "brand": "MIU MIU",
+    "name": "Aventure leather tote bag",
+    "image": "Images/fall4.png"
+  },
+  {
+      "id": 7,
+      "category":"COLLECTIONS",
+      "brand": "MIU MIU",
+      "name": "Diagonal check skirt",
+      "image": "Images/fall5.png"
+  },
+  {
+      "id": 8,
+      "category":"COLLECTIONS",
+      "brand": "MIU MIU",
+      "name": "Nappa leather boots",
+      "image": "Images/fall6.png"
+  },
+  {
+      "id": 9,
+      "category":"COLLECTIONS",
+      "brand": "KHAITE",
+      "name": "Charli cardigan",
+      "image": "Images/fall7.png"
+  },
+  {
+      "id": 10,
+      "category":"COLLECTIONS",
+      "brand": "KHAITE",
+      "name": "Dome belt",
+      "image": "Images/fall8.png"
+  },
+  {
+      "id": 11,
+      "category":"COLLECTIONS",
+      "brand": "KHAITE",
+      "name": "Dugan pants",
+      "image": "Images/fall9.png"
+  },
+  {
+      "id": 12,
+      "category": "TRENDS",
+      "name": "The Collarless Jacket",
+      "description": "St. Agni Utility Cocoon suede jacket",
+      "price": "825$",
+      "image": "Images/featured1.png"
+  },
+  {
+      "id": 13,
+      "category": "TRENDS",
+      "name": "The Pop of Red",
+      "description": "Madewell compact shell tank top",
+      "price": "35$",
+      "image": "Images/featured2.png"
+  },
+  {
+      "id": 14,
+      "category": "TRENDS",
+      "name": "The Suede Handbag",
+      "description": "The Row Bindle small suede shoulder bag",
+      "price": "35$",
+      "image": "Images/featured3.png"
+  },
+  {
+      "id": 15,
+      "category": "TRENDS",
+      "brand": "ENTIRE STUDIOS",
+      "name": "Juno coat",
+      "price": "600$",
+      "image": "Images/coat1.png"
+  },
+  {
+      "id": 16,
+      "category": "TRENDS",
+      "brand": "MAX MARA",
+      "name": "Laura Jacket",
+      "price": "1,310$",
+      "image": "Images/coat2.png"
+  },
+  {
+    "id": 17,
+    "category": "CELEBRITY STYLE",
+    "title": "Kendall and Gigi: A Bond Forged on the Road",
+    "author": "BY KRIS JENNER",
+    "image": "Images/fashionmain.png",
+    "content": "Kris Jenner would travel with Kendall when she began modeling at 14, but always knew Kendall had a support system in Gigi on the road. “Growing into careers is a lot,” says Jenner. “But as soon as they were able to leave the nest, they did, and to know that if they ever needed anything they were there for each other— as a mom that’s so comforting.”"
+  },
+  {
+    "id": 18,
+    "category": "TRENDS",
+    "title": "The Faux Fur Coat",
+    "author": "BY LEAH FAYE COOPER",
+    "image": "Images/coat1.png",
+    "content": "“Disliking winter is one of my personality traits, and on especially cold days, the only thing that sees me through is the promise of wearing an extremely fab faux fur coat. I was delighted to see so many on the fall runways; I’ll likely be treating myself to one in the months to come.” — Leah Faye Cooper, digital style director"
+  }
+]

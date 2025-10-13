@@ -1,0 +1,89 @@
+.article-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 60px;
+    margin-bottom: 50px;
+}
+  
+.article-text {
+    flex: 2;
+    text-align: center; 
+}
+
+.article-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px; 
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+  
+.article-header .author {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 0 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+  
+.article-header .date {
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+    font-weight: 400;
+}
+
+.article-image {
+    flex: 1;
+    max-width: 450px;
+}
+  
+.article-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+
+.article-body {
+    margin: 40px 0;
+    color: #222;
+}
+  
+.article-body p {
+    max-width: 800px; 
+    margin: 20px auto;
+    font-size: 20px; 
+    text-align: left;
+    line-height: 1.7;
+    font-family: 'Old Standard TT', serif;
+}
+
+.article-body .text-line {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+  
+
+@media (max-width: 900px) {
+    .article-header {
+      flex-direction: column;
+      align-items: center;
+    }
+    .article-image {
+      max-width: 100%;
+      margin-top: 30px;
+    }
+    .article-header h1 {
+      font-size: 2.2rem;
+    }
+}

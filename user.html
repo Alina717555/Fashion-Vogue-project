@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vogue - Sign In</title>
+  <link rel="stylesheet" href="user.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <!-- LEFT IMAGE -->
+    <div class="left">
+      <img src="Images/userimg.png" alt="Vogue Model">
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="right">
+      <div class="form-container">
+        <img src="Images/blacklogo.png" alt="Vogue Logo" class="logo">
+
+        <h2>Sign in or create an account</h2>
+        <p class="info">
+          By continuing, including through our platform partners, you agree to our 
+          <a href="#">User Agreement</a> (including 
+          <a href="#">class action waiver</a> and 
+          <a href="#">arbitration provisions</a>) and acknowledge our 
+          <a href="#">Privacy Policy</a>.
+        </p>
+
+        <!-- FORM -->
+        <form id="loginForm">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn">CONTINUE WITH EMAIL</button>
+        </form>
+
+        <div class="divider">
+            <span>OR</span>
+          </div>
+          
+
+        <!-- SOCIAL LOGIN -->
+        <div class="social-buttons">
+          <button class="social google" id="googleBtn">
+            <img src="Images/google.png" alt="Google"> GOOGLE
+          </button>
+          <button class="social apple" id="appleBtn">
+            <img src="Images/Apple.png" alt="Apple"> APPLE
+          </button>
+          <button class="social facebook" id="facebookBtn">
+            <img src="Images/facebookuser.png" alt="Facebook"> FACEBOOK
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scriptuser.js"></script>
+</body>
+</html>

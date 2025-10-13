@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vogue – Search</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="stylehome.css">
+  <link rel="stylesheet" href="stylesearch.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <button class="subscribe-btn">SUBSCRIBE</button>
+    <p>Your All-Access Pass to Vogue <a href="#">DOWNLOAD NOW</a></p>
+  </div>
+
+  <header class="main-header">
+    <div class="header-upper">
+      <div class="logo">
+        <a href="home.html">
+          <img src="Images/blacklogo.png" alt="Vogue Logo">
+        </a>
+      </div>
+      <div class="header-icons">
+        <a href="search.html" class="icon-link">
+          <img src="Images/Searchicon.png" alt="Search">
+        </a>
+        <a href="user.html" class="icon-link">
+          <img src="Images/Usericon.png" alt="User">
+        </a>
+        <span class="menu-text">MENU</span>
+        <a href="#" class="icon-link menu-btn">
+          <img src="Images/Menuicon.png" alt="Menu Button">
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="fashion.html">FASHION</a></li>
+        <li><a href="#">RUNWAY</a></li>
+        <li><a href="#">SHOPPING</a></li>
+        <li><a href="#">BEAUTY</a></li>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="trends.html">TRENDS</a></li>
+        <li><a href="#">WEDDINGS</a></li>
+        <li><a href="collections.html">COLLECTIONS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="search-hero">
+    <h1 class="search-title">Search stories from Vogue</h1>
+  </section>
+
+  <div class="line"></div>
+  <div class="search-box">
+    <div class="search-left">
+      <img src="Images/Searchicon.png" alt="Search Icon" class="search-icon">
+      <input type="text" id="searchInput" placeholder="Try 'fashion'..." class="search-input">
+    </div>      
+    <button class="search-btn">SEARCH</button>
+  </div>
+
+  <div class="filter-sort-controls">
+    <div class="custom-select-wrapper">
+      <label>FILTER</label>
+      <div class="custom-select" data-target="categoryFilter">
+        <div class="custom-select-trigger">All Categories</div>
+        <div class="custom-options">
+          <div class="custom-option" data-value="all">All Categories</div>
+          <div class="custom-option" data-value="MUSTREAD">Must-Read</div>
+          <div class="custom-option" data-value="TRENDS">Trends</div>
+          <div class="custom-option" data-value="COLLECTIONS">Collections</div>
+        </div>
+      </div>
+      <select id="categoryFilter" style="display: none;">
+          <option value="all">All Categories</option>
+          <option value="MUSTREAD">Must-Read</option>
+          <option value="TRENDS">Trends</option>
+          <option value="COLLECTIONS">Collections</option>
+      </select>
+    </div>
+
+    <div class="custom-select-wrapper">
+      <label>SORT BY</label>
+      <div class="custom-select" data-target="sortOrder">
+        <div class="custom-select-trigger">Default</div>
+        <div class="custom-options">
+          <div class="custom-option" data-value="default">Default</div>
+          <div class="custom-option" data-value="price-asc">Price: Low to High</div>
+          <div class="custom-option" data-value="price-desc">Price: High to Low</div>
+          <div class="custom-option" data-value="name-asc">Name: A to Z</div>
+          <div class="custom-option" data-value="name-desc">Name: Z to A</div>
+        </div>
+      </div>
+      <select id="sortOrder" style="display: none;">
+          <option value="default">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name-asc">Name: A to Z</option>
+          <option value="name-desc">Name: Z to A</option>
+      </select>
+    </div>
+  </div>
+  <p class="results-info"></p>
+  <div class="line"></div>
+
+  <div id="resultsContainer"></div>
+  <p id="noResults" style="display:none; text-align:center; margin:20px; font-style:italic;">No results found</p>
+  <div class="line"></div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <img src="Images/whitelogo.png" alt="Vogue White Logo" class="footer-logo">
+        <p class="footer-desc">
+          The latest fashion news, beauty coverage, celebrity style, fashion week updates,
+          culture reviews, and videos on Vogue.com.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/Vogue/"><img src="Images/Facebookicon.png" alt="Facebook"></a>
+          <a href="https://www.pinterest.com/voguemagazine/"><img src="Images/Pinteresticon.png" alt="Pinterest"></a>
+          <a href="https://www.instagram.com/voguemagazine/"><img src="Images/Instagramicon.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/@voguemagazine?lang=en"><img src="Images/TikTokicon.png" alt="TikTok"></a>
+          <a href="https://x.com/voguemagazine"><img src="Images/Xicon.png" alt="X"></a>
+        </div>
+      </div>
+  
+      <div class="footer-links">
+        <ul>
+          <li class="footer-title">MORE FROM VOGUE</li>
+          <li><a href="#">NEWSLETTER</a></li>
+          <li><a href="#">MANAGE ACCOUNT</a></li>
+          <li><a href="#">VERIFY SUBSCRIPTION</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul>
+          <li class="footer-title">ABOUT VOGUE</li>
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="#">VOGUE ARCHIVE</a></li>
+          <li><a href="#">FORCES OF FASHION</a></li>
+          <li><a href="#">VOGUE COLLEGE OF FASHION</a></li>
+        </ul>
+        <ul>
+          <li class="footer-title">SEE MORE STORIES</li>
+          <li><a href="fashion.html">FASHION</a></li>
+          <li><a href="#">BEAUTY</a></li>
+          <li><a href="#">CULTURE</a></li>
+          <li><a href="trends.html">TRENDS</a></li>
+          <li><a href="#">RUNWAY</a></li>
+          <li><a href="#">COLLECTIONS</a></li>
+          <li><a href="#">WEDDINGS</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">
+      © 2025 Condé Nast. All rights reserved. Vogue may earn a portion of sales from products that are purchased through our site as part of our Affiliate Partnerships with retailers. The material on this site may not be reproduced, distributed, transmitted, cached, or otherwise used without prior written permission of Condé Nast.
+    </p>
+  </footer>
+
+  <script src="scriptsearch.js"></script>
+</body>
+</html>
+
