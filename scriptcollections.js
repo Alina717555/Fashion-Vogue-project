@@ -23,9 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   document.addEventListener('DOMContentLoaded', () => {
 
-    // ==========================================================
-    // ===== EFFECT 1: Scroll-Reveal for Collection Items =====
-    // ==========================================================
     const fallItems = document.querySelectorAll('.fall-item');
     if (fallItems.length > 0) {
       const observer = new IntersectionObserver((entries) => {
@@ -44,9 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    // ======================================================
-    // ===== EFFECT 2: Parallax for Hero Image =====
-    // ======================================================
+  
     const heroImage = document.querySelector('.big-pic');
     if (heroImage) {
       window.addEventListener('scroll', () => {
@@ -55,20 +50,15 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    // ======================================================
-    // ===== FIXED: Mobile Menu Toggle Logic =====
-    // ======================================================
     const menuBtn = document.querySelector('.menu-btn');
     const mainNav = document.querySelector('.main-nav');
   
     if (menuBtn && mainNav) {
-      // Listen for clicks on the menu button
       menuBtn.addEventListener('click', (e) => {
         e.preventDefault();
         mainNav.classList.toggle('open');
       });
   
-      // Listen for clicks anywhere to close the menu
       document.addEventListener('click', (e) => {
         const isClickInside = mainNav.contains(e.target) || menuBtn.contains(e.target);
         if (mainNav.classList.contains('open') && !isClickInside) {

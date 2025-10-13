@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   });
   
-  // --- CORE SEARCH, FILTER, AND SORT LOGIC ---
   function updateResults() {
   const query = searchInput.value.trim().toLowerCase();
   if (!query) {
@@ -57,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   (article.name && article.name.toLowerCase().includes(query)) ||
   (article.category && article.category.toLowerCase().includes(query)) ||
   (article.brand && article.brand.toLowerCase().includes(query)) ||
-  (article.content && article.content.toLowerCase().includes(query)) // <-- THIS IS THE ONLY LINE I ADDED
+  (article.content && article.content.toLowerCase().includes(query)) 
   );
   const category = categoryFilter.value;
   if (category !== 'all') {

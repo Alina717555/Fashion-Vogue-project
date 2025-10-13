@@ -22,7 +22,6 @@
   display: block;
 }
 
-/*Fall collection*/
 .fall-collection {
   max-width: 1200px;
   margin: 60px auto;
@@ -41,7 +40,7 @@
 .fall-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px; /* Added a gap for spacing */
+  gap: 30px; 
 }
 
 .fall-item img {
@@ -59,7 +58,6 @@
   line-height: 1.4;
 }
   
-/* === CSS for JavaScript Effects === */
 .collection-hero {
   overflow: hidden;
 }
@@ -76,20 +74,15 @@
   transform: translateY(0);
 }
 
-/* =======================================
-   === RESPONSIVE & MOBILE MENU STYLES ===
-   ======================================= */
 @media (max-width: 768px) {
-  /* Hide the desktop nav list to prepare for the slide-in menu */
   .main-nav ul {
     display: none;
   }
 
-  /* Define the appearance of the slide-in container */
   .main-nav {
     position: fixed;
     top: 0;
-    right: -100%; /* Hidden off screen */
+    right: -100%;
     width: 80%;
     height: 100%;
     background: #fff;
@@ -98,12 +91,10 @@
     z-index: 9999;
   }
 
-  /* The .open class (added by JS) makes the menu slide in */
   .main-nav.open {
     right: 0;
   }
 
-  /* When the menu is open, display its list vertically */
   .main-nav.open ul {
     display: flex;
     flex-direction: column;
@@ -123,12 +114,10 @@
     display: block;
   }
 
-  /* Make the fall collection grid stack into a single column */
   .fall-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Responsive footer links from your original code */
   .footer-links {
     gap: 30px;
   }

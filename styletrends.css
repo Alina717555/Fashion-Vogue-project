@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
-
-/* === Your Original Page Styles (Unchanged) === */
 .trends-hero {
     max-width: 900px;
     margin: 60px auto;
@@ -271,7 +269,6 @@
     border: none;    
 }
   
-/* === Your Animations (Unchanged) === */
 @keyframes fadeSlideUp {
   0% { opacity: 0; transform: translateY(40px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -303,21 +300,16 @@
   transition: transform 0.6s ease;
 }
 
-/* ===============================================
-=== RESPONSIVE & MOBILE MENU STYLES (FIXED) ===
-===============================================
-*/
+
 @media (max-width: 768px) {
-  /* Hide the desktop nav list to prepare for the slide-in menu */
   .main-nav ul {
     display: none;
   }
 
-  /* Define the appearance of the slide-in container */
   .main-nav {
     position: fixed;
     top: 0;
-    right: -100%; /* Hidden off screen */
+    right: -100%; 
     width: 80%;
     height: 100%;
     background: #fff;
@@ -326,12 +318,10 @@
     z-index: 9999;
   }
 
-  /* The .open class (added by JS) makes the menu slide in */
   .main-nav.open {
     right: 0;
   }
 
-  /* When the menu is open, display its list vertically */
   .main-nav.open ul {
     display: flex;
     flex-direction: column;
@@ -351,15 +341,41 @@
     display: block;
   }
   
-  /* Responsive fixes for your page content */
-  .trends-title { font-size: 1.8rem; }
-  .trends-text p { font-size: 1rem; }
-  .footer-links { gap: 30px; }
-  .trending-grid { flex-direction: column; }
-  .left-big-image, .right-small-images { width: 100%; }
-  .featured-item { flex-direction: column; align-items: flex-start; padding-bottom: 20px; }
-  .featured-item img { width: 100%; height: auto; margin-bottom: 15px; }
-  .price-btn { position: static; transform: none; width: 100%; margin-top: 15px; }
-  .coats { grid-template-columns: 1fr; }
-  .video-wrapper iframe { height: 400px; }
+  .trends-title { 
+    font-size: 1.8rem; 
+  }
+  .trends-text p { 
+    font-size: 1rem;
+   }
+  .footer-links { 
+    gap: 30px; 
+  }
+  .trending-grid { 
+    flex-direction: column; 
+  }
+  .left-big-image, .right-small-images { 
+    width: 100%;
+   }
+  .featured-item { 
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding-bottom: 20px; 
+  }
+  .featured-item img { 
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 15px; 
+  }
+  .price-btn { 
+    position: static; 
+    transform: none; 
+    width: 100%; 
+    margin-top: 15px; 
+  }
+  .coats { 
+    grid-template-columns: 1fr; 
+  }
+  .video-wrapper iframe { 
+    height: 400px; 
+  }
 }

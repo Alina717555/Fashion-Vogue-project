@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
 
-/* === Search Section === */
 .search-title {
   font-family: 'Old Standard TT', sans-serif;
   font-size: 50px;
@@ -59,7 +58,7 @@
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  flex-shrink: 0; /* Prevents button from shrinking */
+  flex-shrink: 0; 
 }
 
 .line {
@@ -78,29 +77,106 @@
   margin: 20px auto;
 }
 
-/* === Filter & Sort Section === */
-.filter-sort-controls { display: flex; justify-content: flex-end; align-items: center; max-width: 900px; margin: 40px auto 20px; padding: 0 20px; gap: 45px; }
-.custom-select-wrapper { display: flex; align-items: center; gap: 15px; }
-.custom-select-wrapper label { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.15em; color: #777; text-transform: uppercase; }
-.custom-select { position: relative; width: 230px; }
-.custom-select-trigger { padding: 8px 0; border-bottom: 1px solid #ddd; background-color: transparent; cursor: pointer; position: relative; font-size: 15px; color: #111; width: 100%; text-align: left; transition: border-color 0.3s ease; }
-.custom-select-trigger:hover { border-color: #000; }
-.custom-select-trigger::after { content: ''; position: absolute; right: 5px; top: 50%; transform: translateY(-50%) rotate(45deg); width: 7px; height: 7px; border-right: 1.5px solid #555; border-bottom: 1.5px solid #555; transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); }
-.custom-select.open .custom-select-trigger::after { transform: translateY(-25%) rotate(-135deg); }
-.custom-options { position: absolute; top: 100%; left: 0; right: 0; background-color: #fff; border-radius: 4px; border: 1px solid #f0f0f0; box-shadow: 0 10px 25px rgba(0,0,0,0.08); z-index: 10; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1); margin-top: 8px; padding: 5px; }
-.custom-select.open .custom-options { opacity: 1; visibility: visible; transform: translateY(0); }
-.custom-option { padding: 12px 15px; font-size: 14px; color: #333; cursor: pointer; border-radius: 3px; transition: background-color 0.2s ease, color 0.2s ease; }
-.custom-option:hover { background-color: #f5f5f5; color: #000; }
-.custom-option.selected { background-color: #eee; font-weight: 500; color: #000; }
+.filter-sort-controls { 
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+  max-width: 900px; 
+  margin: 40px auto 20px; 
+  padding: 0 20px; 
+  gap: 45px; 
+}
+.custom-select-wrapper { 
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+}
+.custom-select-wrapper label { 
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 600; 
+  font-size: 11px; 
+  letter-spacing: 0.15em; 
+  color: #777; 
+  text-transform: uppercase;
+ }
+.custom-select { 
+  position: relative; 
+  width: 230px; 
+}
+.custom-select-trigger { 
+  padding: 8px 0; 
+  border-bottom: 1px solid #ddd; 
+  background-color: transparent; 
+  cursor: pointer; 
+  position: relative; 
+  font-size: 15px; 
+  color: #111; 
+  width: 100%; 
+  text-align: left; 
+  transition: border-color 0.3s ease; 
+}
+.custom-select-trigger:hover { 
+  border-color: #000; 
+}
+.custom-select-trigger::after { 
+  content: ''; 
+  position: absolute; 
+  right: 5px; 
+  top: 50%; 
+  transform: translateY(-50%) rotate(45deg); 
+  width: 7px; 
+  height: 7px; 
+  border-right: 1.5px solid #555; 
+  border-bottom: 1.5px solid #555; 
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+}
+.custom-select.open .custom-select-trigger::after { 
+  transform: translateY(-25%) rotate(-135deg);
+ }
+.custom-options { 
+  position: absolute; 
+  top: 100%; 
+  left: 0; 
+  right: 0; 
+  background-color: #fff; 
+  border-radius: 4px; 
+  border: 1px solid #f0f0f0; 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
+  z-index: 10; 
+  opacity: 0; 
+  visibility: hidden; 
+  transform: translateY(10px); 
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1); 
+  margin-top: 8px; 
+  padding: 5px; 
+}
+.custom-select.open .custom-options { 
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+}
+.custom-option { 
+  padding: 12px 15px; 
+  font-size: 14px; color: #333; 
+  cursor: pointer; 
+  border-radius: 3px; 
+  transition: background-color 0.2s ease, color 0.2s ease;
+ }
+.custom-option:hover { 
+  background-color: #f5f5f5; 
+  color: #000; }
+.custom-option.selected { 
+  background-color: #eee; 
+  font-weight: 500; color: #000; 
+}
 
-/* === Results Section === */
 .fashion-card {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   max-width: 900px;
   margin: 40px auto;
-  padding: 0 20px; /* Use padding on parent instead of card */
+  padding: 0 20px; 
 }
 
 .fashion-img {
@@ -140,11 +216,10 @@
 
 @media (max-width: 768px) {
   
-  /* --- Mobile Navigation Menu --- */
   .main-nav {
     position: fixed;
     top: 0;
-    right: -100%; /* Hidden off screen */
+    right: -100%; 
     width: 80%;
     height: 100%;
     background: #fff;
@@ -171,7 +246,6 @@
     text-align: left;
   }
   
-  /* --- FIXED: Responsive Content Styles --- */
   .search-title {
     font-size: 32px;
     margin-top: 60px;
@@ -179,41 +253,40 @@
   }
   
   .search-box {
-    max-width: 100%;  /* Allow search box to shrink */
-    width: 90%;       /* Set its width to 90% of the screen */
+    max-width: 100%; 
+    width: 90%;       
   }
   
   .filter-sort-controls {
-    flex-direction: column; /* Stack filter/sort controls vertically */
-    align-items: stretch; /* Make items full width */
-    gap: 25px; /* Increase gap between filter and sort */
+    flex-direction: column; 
+    align-items: stretch; 
+    gap: 25px; 
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* NEWLY ADDED RULE TO FIX ALIGNMENT */
   .custom-select-wrapper {
-    flex-direction: column; /* Stack the label on top of the dropdown */
+    flex-direction: column; 
     align-items: flex-start;
-    gap: 8px; /* Reduce gap between label and dropdown */
+    gap: 8px; 
   }
 
   .custom-select {
-    width: 100%; /* Make dropdowns full width on mobile */
+    width: 100%; 
   }
 
   .fashion-card {
-    flex-direction: column; /* Stack the image on top of the text */
+    flex-direction: column; 
   }
   
   .fashion-img {
-    width: 100%;     /* Make the image take the full width */
-    height: auto;    /* Adjust height automatically */
+    width: 100%;    
+    height: auto;    
   }
 
   .fashion-category {
-    margin-top: 15px; /* Reduce the large margin for mobile */
+    margin-top: 15px; 
   }
 }
 
