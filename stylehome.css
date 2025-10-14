@@ -441,10 +441,6 @@ footer hr {
 }
 
 
-/* =================================== */
-/* === RESPONSIVE STYLES (MEDIA QUERIES) === */
-/* =================================== */
-
 @media (min-width: 768px) {
   .news-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -464,7 +460,6 @@ footer hr {
 }
 
 @media (max-width: 768px) {
-  /* --- FOOTER --- */
   footer {
       padding: 40px 20px;
   }
@@ -480,7 +475,6 @@ footer hr {
       margin-top: 40px;
   }
 
-  /* --- SHOP SLIDER --- */
   .shop-item {
     width: 100%;
     padding: 0 5px;
@@ -489,8 +483,7 @@ footer hr {
     font-size: 0.85rem;
   }
 
-  /* --- MOBILE NAVIGATION MENU --- */
-  .main-nav {
+    .main-nav {
     position: fixed;
     top: 0;
     right: -100%;          
@@ -520,7 +513,6 @@ footer hr {
     display: block;
   }
 
-  /* === THIS IS THE NEW MOBILE HEADER FIX === */
   .header-upper {
       justify-content: space-between; 
       padding: 15px 20px;
