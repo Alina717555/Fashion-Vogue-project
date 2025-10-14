@@ -53,7 +53,7 @@
 .fashion-card img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* Changed to 'cover' in mobile */
+  object-fit: contain;
   border-radius: 3px;
 }
 
@@ -130,7 +130,7 @@
 .must-grid img {
   width: 100%;
   height: auto;      
-  object-fit: contain; /* Changed to 'cover' in mobile */
+  object-fit: contain;
 }
 
 .must-grid h4 {
@@ -178,10 +178,6 @@
   box-shadow: 0 6px 16px rgba(0,0,0,.15);
 }
 
-
-/* =================================== */
-/* === MOBILE ADAPTIVE FIX (MEDIA QUERY) === */
-/* =================================== */
 @media (max-width: 768px) {
 
   .fashion-heading {
@@ -192,43 +188,36 @@
     margin-bottom: 30px;
   }
 
-  /* --- GRID FIX --- */
   .fashion-grid,
   .must-grid {
-    grid-template-columns: 1fr; /* Switch to a single column */
-    gap: 50px; /* Increase space between stacked items */
+    display: flex; 
+    flex-direction: column; 
+    gap: 50px;
     margin-bottom: 50px;
   }
 
-  /* --- CARD FIX --- */
-  /* Reset the special desktop grid positions */
   .fashion-card.large,
   .fashion-card.small {
-    grid-column: auto;
-    grid-row: auto;
     margin-top: 0;
   }
   .card-text {
-    text-align: left; /* Align text to the left for better readability */
-    margin: 12px 0 0 0; /* Adjust margin for left alignment */
-    max-width: 100%; /* Allow text to use full width */
+    text-align: left;
+    margin: 12px 0 0 0;
+    max-width: 100%;
   }
 
-  /* --- IMAGE FIX --- */
-  /* This is the key change to make images display correctly */
   .fashion-card img,
   .must-grid img {
-    height: 280px;         /* Give all images a consistent height */
-    object-fit: cover;     /* Make images fill the space (cropping if needed) */
+    height: 300px;
+    object-fit: cover; 
+    width: 100%;
   }
 
-  /* Remove the desktop height restrictions */
   .fashion-card.large img,
   .fashion-card.small img {
     max-height: none; 
   }
 
-  /* (The nav menu styles you had are kept below, no changes needed there) */
   .main-nav {
     position: fixed;
     top: 0;
@@ -242,24 +231,18 @@
     z-index: 9999;
     box-shadow: -4px 0 15px rgba(0,0,0,0.1);
   }
-
-  .main-nav.open {
-    right: 0; 
-  }
-
+  .main-nav.open { right: 0; }
   .main-nav ul {
     display: flex; 
     flex-direction: column;
     gap: 0;
     padding: 40px 20px;
   }
-
   .main-nav li {
     border-bottom: 1px solid #ddd;
     padding: 16px 0;
     text-align: left;
   }
-
   .main-nav a {
     font-size: 1.1rem;
     font-weight: 700;
