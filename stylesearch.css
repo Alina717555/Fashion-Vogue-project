@@ -25,6 +25,8 @@
   align-items: center;
   padding-left: 20px;
   flex-grow: 1;
+  /* Add this to prevent the input from overflowing */
+  min-width: 0;
 }
 
 .search-icon {
@@ -212,7 +214,9 @@
   text-transform: uppercase;
 }
 
+/* =================================== */
 /* === MOBILE ADAPTIVE STYLES === */
+/* =================================== */
 @media (max-width: 768px) {
   .search-title {
     font-size: 32px;
@@ -220,29 +224,30 @@
     margin-bottom: 40px;
   }
 
-  /* --- THIS IS THE SEARCH BOX FIX --- */
+  /* --- THIS IS THE IMPROVED SEARCH BOX FIX --- */
   .search-box {
-    width: 90%; /* Use 90% of the screen width */
-    height: 50px; /* Make it slightly shorter */
+    width: 90%;
+    height: 50px;
   }
 
   .search-left {
-    padding-left: 15px; /* Reduce padding on the left */
+    padding-left: 15px;
   }
 
   .search-icon {
-    width: 24px; /* Make icon slightly smaller */
+    width: 20px;
     height: 20px;
     margin-right: 10px;
   }
 
   .search-input {
-    font-size: 16px; /* Reduce font size for smaller screens */
+    font-size: 16px;
   }
 
   .search-btn {
-    width: 120px; /* Reduce button width */
-    font-size: 16px; /* Reduce button font size */
+    width: 100px; /* Make the button even smaller */
+    font-size: 14px; /* Adjust font size to fit */
+    padding: 0 10px; /* Add some padding */
   }
   /* --- END OF FIX --- */
 
