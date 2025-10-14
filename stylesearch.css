@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
-
 .search-title {
   font-family: 'Old Standard TT', sans-serif;
   font-size: 50px;
@@ -58,7 +57,7 @@
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .line {
@@ -77,97 +76,97 @@
   margin: 20px auto;
 }
 
-.filter-sort-controls { 
-  display: flex; 
-  justify-content: flex-end; 
-  align-items: center; 
-  max-width: 900px; 
-  margin: 40px auto 20px; 
-  padding: 0 20px; 
-  gap: 45px; 
+.filter-sort-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 900px;
+  margin: 40px auto 20px;
+  padding: 0 20px;
+  gap: 45px;
 }
-.custom-select-wrapper { 
-  display: flex; 
-  align-items: center; 
-  gap: 15px; 
+.custom-select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-.custom-select-wrapper label { 
-  font-family: 'Montserrat', sans-serif; 
-  font-weight: 600; 
-  font-size: 11px; 
-  letter-spacing: 0.15em; 
-  color: #777; 
+.custom-select-wrapper label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: #777;
   text-transform: uppercase;
  }
-.custom-select { 
-  position: relative; 
-  width: 230px; 
+.custom-select {
+  position: relative;
+  width: 230px;
 }
-.custom-select-trigger { 
-  padding: 8px 0; 
-  border-bottom: 1px solid #ddd; 
-  background-color: transparent; 
-  cursor: pointer; 
-  position: relative; 
-  font-size: 15px; 
-  color: #111; 
-  width: 100%; 
-  text-align: left; 
-  transition: border-color 0.3s ease; 
+.custom-select-trigger {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  font-size: 15px;
+  color: #111;
+  width: 100%;
+  text-align: left;
+  transition: border-color 0.3s ease;
 }
-.custom-select-trigger:hover { 
-  border-color: #000; 
+.custom-select-trigger:hover {
+  border-color: #000;
 }
-.custom-select-trigger::after { 
-  content: ''; 
-  position: absolute; 
-  right: 5px; 
-  top: 50%; 
-  transform: translateY(-50%) rotate(45deg); 
-  width: 7px; 
-  height: 7px; 
-  border-right: 1.5px solid #555; 
-  border-bottom: 1.5px solid #555; 
-  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+.custom-select-trigger::after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid #555;
+  border-bottom: 1.5px solid #555;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
-.custom-select.open .custom-select-trigger::after { 
+.custom-select.open .custom-select-trigger::after {
   transform: translateY(-25%) rotate(-135deg);
  }
-.custom-options { 
-  position: absolute; 
-  top: 100%; 
-  left: 0; 
-  right: 0; 
-  background-color: #fff; 
-  border-radius: 4px; 
-  border: 1px solid #f0f0f0; 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
-  z-index: 10; 
-  opacity: 0; 
-  visibility: hidden; 
-  transform: translateY(10px); 
-  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1); 
-  margin-top: 8px; 
-  padding: 5px; 
+.custom-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  margin-top: 8px;
+  padding: 5px;
 }
-.custom-select.open .custom-options { 
-  opacity: 1; 
-  visibility: visible; 
-  transform: translateY(0); 
+.custom-select.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
-.custom-option { 
-  padding: 12px 15px; 
-  font-size: 14px; color: #333; 
-  cursor: pointer; 
-  border-radius: 3px; 
+.custom-option {
+  padding: 12px 15px;
+  font-size: 14px; color: #333;
+  cursor: pointer;
+  border-radius: 3px;
   transition: background-color 0.2s ease, color 0.2s ease;
  }
-.custom-option:hover { 
-  background-color: #f5f5f5; 
+.custom-option:hover {
+  background-color: #f5f5f5;
   color: #000; }
-.custom-option.selected { 
-  background-color: #eee; 
-  font-weight: 500; color: #000; 
+.custom-option.selected {
+  background-color: #eee;
+  font-weight: 500; color: #000;
 }
 
 .fashion-card {
@@ -176,7 +175,7 @@
   gap: 20px;
   max-width: 900px;
   margin: 40px auto;
-  padding: 0 20px; 
+  padding: 0 20px;
 }
 
 .fashion-img {
@@ -213,80 +212,70 @@
   text-transform: uppercase;
 }
 
-
+/* === MOBILE ADAPTIVE STYLES === */
 @media (max-width: 768px) {
-  
-  .main-nav {
-    position: fixed;
-    top: 0;
-    right: -100%; 
-    width: 80%;
-    height: 100%;
-    background: #fff;
-    overflow-y: auto;
-    transition: right 0.3s ease;
-    z-index: 9999;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-  }
-  .main-nav ul {
-    display: none;
-  }
-  .main-nav.open {
-    right: 0;
-  }
-  .main-nav.open ul {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 20px;
-    gap: 0;
-  }
-  .main-nav.open li {
-    border-bottom: 1px solid #ddd;
-    padding: 16px 0;
-    text-align: left;
-  }
-  
   .search-title {
     font-size: 32px;
     margin-top: 60px;
     margin-bottom: 40px;
   }
-  
+
+  /* --- THIS IS THE SEARCH BOX FIX --- */
   .search-box {
-    max-width: 100%; 
-    width: 90%;       
+    width: 90%; /* Use 90% of the screen width */
+    height: 50px; /* Make it slightly shorter */
   }
-  
+
+  .search-left {
+    padding-left: 15px; /* Reduce padding on the left */
+  }
+
+  .search-icon {
+    width: 24px; /* Make icon slightly smaller */
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .search-input {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .search-btn {
+    width: 120px; /* Reduce button width */
+    font-size: 16px; /* Reduce button font size */
+  }
+  /* --- END OF FIX --- */
+
   .filter-sort-controls {
-    flex-direction: column; 
-    align-items: stretch; 
-    gap: 25px; 
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .custom-select-wrapper {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-start;
-    gap: 8px; 
+    gap: 8px;
   }
 
   .custom-select {
-    width: 100%; 
+    width: 100%;
   }
 
   .fashion-card {
-    flex-direction: column; 
+    flex-direction: column;
   }
-  
+
   .fashion-img {
-    width: 100%;    
-    height: auto;    
+    width: 100%;
+    height: auto;
   }
 
   .fashion-category {
-    margin-top: 15px; 
+    margin-top: 15px;
   }
 }
 
