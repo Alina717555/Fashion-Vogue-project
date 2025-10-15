@@ -414,7 +414,11 @@ footer hr {
   color: #444;
 }
 
-/* API DESIGN */
+
+/* =================================== */
+/* === LATEST NEWS SECTION (CORRECTED) === */
+/* =================================== */
+
 .news-section {
   padding: 80px 20px;
   background-color: #f9f9f9; 
@@ -428,27 +432,82 @@ footer hr {
 
 .news-title {
   font-family: 'Montserrat', sans-serif;
-  font-size:27px;
+  font-size: 27px;
   font-weight: 530;
   margin-bottom: 50px;
 }
 
 .news-grid {
   display: grid;
+  /* Start with 1 column for mobile */
   grid-template-columns: 1fr; 
   gap: 30px;
   text-align: left;
 }
 
+.news-card {
+  background: #fff;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  display: flex; 
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+  transition: all 0.3s ease;
+}
 
+.news-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1); 
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 220px; /* Give all images a fixed height */
+  object-fit: cover; /* This makes images fill the space without stretching */
+}
+
+.news-card-content {
+  padding: 20px;
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.news-source {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.news-card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  flex-grow: 1; 
+}
+
+
+/* =================================== */
+/* === RESPONSIVE STYLES (MEDIA QUERIES) === */
+/* =================================== */
+
+/* For tablets and larger */
 @media (min-width: 768px) {
   .news-grid {
+    /* Switch to 2 columns on tablets */
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);  
   }
+}
 
-  .news-card:first-child {
-    grid-row: 1 / 3;
+/* For desktops */
+@media (min-width: 1024px) {
+  .news-grid {
+    /* Switch to 3 columns on desktops */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -483,7 +542,7 @@ footer hr {
     font-size: 0.85rem;
   }
 
-    .main-nav {
+  .main-nav {
     position: fixed;
     top: 0;
     right: -100%;          
