@@ -415,10 +415,6 @@ footer hr {
 }
 
 
-/* =================================== */
-/* === LATEST NEWS SECTION (CORRECTED) === */
-/* =================================== */
-
 .news-section {
   padding: 80px 20px;
   background-color: #f9f9f9; 
@@ -439,7 +435,6 @@ footer hr {
 
 .news-grid {
   display: grid;
-  /* Start with 1 column for mobile */
   grid-template-columns: 1fr; 
   gap: 30px;
   text-align: left;
@@ -450,8 +445,6 @@ footer hr {
   overflow: hidden;
   text-decoration: none;
   color: #000;
-  display: flex; 
-  flex-direction: column;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
   transition: all 0.3s ease;
 }
@@ -463,15 +456,12 @@ footer hr {
 
 .news-card img {
   width: 100%;
-  height: 220px; /* Give all images a fixed height */
-  object-fit: cover; /* This makes images fill the space without stretching */
+  height: 220px;
+  object-fit: cover;
 }
 
 .news-card-content {
   padding: 20px;
-  flex-grow: 1; 
-  display: flex;
-  flex-direction: column;
 }
 
 .news-source {
@@ -487,29 +477,36 @@ footer hr {
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 10px;
-  flex-grow: 1; 
 }
 
 
-/* =================================== */
-/* === RESPONSIVE STYLES (MEDIA QUERIES) === */
-/* =================================== */
-
-/* For tablets and larger */
 @media (min-width: 768px) {
   .news-grid {
-    /* Switch to 2 columns on tablets */
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .news-card:first-child {
+    grid-column: 1 / -1; 
+    display: flex;
+    align-items: center;
+  }
+
+  .news-card:first-child img {
+    width: 55%; 
+    height: 350px; 
+    flex-shrink: 0;
+  }
+  
+  .news-card:first-child .news-card-content {
+    flex-grow: 1;
+    padding: 30px;
+  }
+  
+  .news-card:first-child .news-card-title {
+    font-size: 1.8rem; 
   }
 }
 
-/* For desktops */
-@media (min-width: 1024px) {
-  .news-grid {
-    /* Switch to 3 columns on desktops */
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
 @media (max-width: 900px) {
   .footer-content {
