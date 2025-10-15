@@ -36,7 +36,7 @@ This project was a collaborative effort between **Amangeldiyva Alina** and **Mar
     * home.html, fashion.html, mustread.html, user.html, including all css of these files
     * responsive design of all mentioned pages.
 
-* **HTML & CSS & Responsive Design (Marat Dna):**
+* **HTML & CSS & Responsive Design (Marat Dana):**
     * search.html, collections.html, trends.html, inculding all css of these files
     * responsive design of all mentioned pages.
 
